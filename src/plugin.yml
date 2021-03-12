@@ -1,0 +1,16 @@
+main: me.foxley.warp.Warp
+name: Warp
+version: 1.0
+author: Foxley
+commands:
+  warp:
+    description: Warp to a zone
+    usage: "/<command> <Name>"
+  setwarp:
+    description: Create a warp on your position
+    usage: "/<command> <Name>"
+    permission: animation.command.setwarp
+  delwarp:
+    description: Delete a warp
+    usage: "/<command> <Name>"
+    permission: animation.command.delwarp
