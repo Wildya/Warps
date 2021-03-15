@@ -1,6 +1,6 @@
-package me.foxley.warp.commands;
+package me.foxley.warps.commands;
 
-import me.foxley.warp.Warp;
+import me.foxley.warps.Warps;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -9,10 +9,10 @@ import org.bukkit.entity.Player;
 
 public class SetWarpCommand implements CommandExecutor {
 
-    private Warp warp;
+    private Warps warps;
 
-    public SetWarpCommand(Warp warp_) {
-        this.warp = warp_;
+    public SetWarpCommand(Warps warps_) {
+        this.warps = warps_;
     }
 
     @Override
@@ -20,7 +20,7 @@ public class SetWarpCommand implements CommandExecutor {
 
         if (args.length > 0 && sender instanceof Player) {
             Player player = (Player) sender;
-            warp.setWarp(args[0], player.getLocation());
+            warps.setWarp(args[0], player.getLocation());
             player.sendMessage(ChatColor.GREEN + "Le warp " + ChatColor.DARK_GREEN + args[0] + ChatColor.GREEN + " a été placé");
             return true;
         } else {

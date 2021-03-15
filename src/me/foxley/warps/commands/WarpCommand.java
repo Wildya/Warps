@@ -1,6 +1,6 @@
-package me.foxley.warp.commands;
+package me.foxley.warps.commands;
 
-import me.foxley.warp.Warp;
+import me.foxley.warps.Warps;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.command.Command;
@@ -10,10 +10,10 @@ import org.bukkit.entity.Player;
 
 public class WarpCommand implements CommandExecutor {
 
-    private Warp warp;
+    private Warps warps;
 
-    public WarpCommand(Warp warp_) {
-        this.warp = warp_;
+    public WarpCommand(Warps warps_) {
+        this.warps = warps_;
     }
 
     @Override
@@ -22,7 +22,7 @@ public class WarpCommand implements CommandExecutor {
         if (args.length > 0 && sender instanceof Player) {
             Player player = (Player) sender;
 
-            Location location = warp.getWarp(args[0]);
+            Location location = warps.getWarp(args[0]);
             if (location != null) {
                 player.teleport(location);
                 player.sendMessage(ChatColor.GREEN + "Vous avez été téléporté au warp " + ChatColor.DARK_GREEN + args[0]);

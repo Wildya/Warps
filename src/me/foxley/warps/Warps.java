@@ -1,14 +1,14 @@
-package me.foxley.warp;
+package me.foxley.warps;
 
-import me.foxley.warp.commands.DelWarpCommand;
-import me.foxley.warp.commands.SetWarpCommand;
-import me.foxley.warp.commands.WarpCommand;
+import me.foxley.warps.commands.DelWarpCommand;
+import me.foxley.warps.commands.SetWarpCommand;
+import me.foxley.warps.commands.WarpCommand;
 import org.bukkit.Location;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.HashMap;
 
-public class Warp extends JavaPlugin {
+public class Warps extends JavaPlugin {
 
     private HashMap<String, Location> warps = new HashMap<>();
 

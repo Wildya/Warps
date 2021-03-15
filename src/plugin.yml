@@ -1,5 +1,5 @@
-main: me.foxley.warp.Warp
-name: Warp
+main: me.foxley.warps.Warps
+name: Warps
 version: 1.0
 author: Foxley
 commands:
