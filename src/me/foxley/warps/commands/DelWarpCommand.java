@@ -5,9 +5,13 @@ import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.command.TabExecutor;
 import org.bukkit.entity.Player;
 
-public class DelWarpCommand implements CommandExecutor {
+import java.util.ArrayList;
+import java.util.List;
+
+public class DelWarpCommand implements TabExecutor {
 
     private Warps warps;
 
@@ -26,6 +30,12 @@ public class DelWarpCommand implements CommandExecutor {
         } else {
             return false;
         }
+    }
+
+    @Override
+    public List<String> onTabComplete(CommandSender commandSender, Command command, String s, String[] strings) {
+
+        return new ArrayList<>(warps.getWarpsNames());
     }
 
 }

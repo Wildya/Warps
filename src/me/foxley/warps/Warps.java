@@ -7,6 +7,7 @@ import org.bukkit.Location;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.HashMap;
+import java.util.Set;
 
 public class Warps extends JavaPlugin {
 
@@ -29,6 +30,10 @@ public class Warps extends JavaPlugin {
 
     public void delWarp(String name) {
         warps.remove(name.toLowerCase());
+    }
+
+    public Set<String> getWarpsNames() {
+        return warps.keySet();
     }
 
 }

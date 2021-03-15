@@ -5,12 +5,12 @@ author: Foxley
 commands:
   warp:
     description: Warp to a zone
-    usage: "/<command> <Name>"
+    usage: "§cUtilisation : /<command> <WarpName>"
   setwarp:
     description: Create a warp on your position
-    usage: "/<command> <Name>"
+    usage: "§cUtilisation : /<command> <WarpName>"
     permission: animation.command.setwarp
   delwarp:
     description: Delete a warp
-    usage: "/<command> <Name>"
+    usage: "§cUtilisation : /<command> <WarpName>"
     permission: animation.command.delwarp
