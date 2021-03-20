@@ -9,8 +9,8 @@ commands:
   setwarp:
     description: Create a warp on your position
     usage: "§cUtilisation : /<command> <WarpName>"
-    permission: animation.command.setwarp
+    permission: warps.command.setwarp
   delwarp:
     description: Delete a warp
     usage: "§cUtilisation : /<command> <WarpName>"
-    permission: animation.command.delwarp
+    permission: warps.command.delwarp
